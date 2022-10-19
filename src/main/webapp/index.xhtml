@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+	<h:head>
+		<title>Kalkulator raty kredytu</title>
+	</h:head>
+	<h:body>
+	
+		<h1>Kalkulator raty kredytu</h1>
+	
+		<h:form id="bla">
+	  		Wysokość kredytu: <h:inputText value="#{calcBB.x}" />
+			<br />
+	  		Długość trwania kredytu: <h:inputText value="#{calcBB.y}" />
+			<br />
+			RRSO: <h:inputText value="#{calcBB.z}" />
+			<h:messages id="msg" />
+	
+			<h:commandButton value="Dodaj" action="#{calcBB.calc()}"/>
+			
+		</h:form>
+	
+	</h:body>
+</html>
